@@ -1,0 +1,85 @@
+{
+    "name": "VCPlayerBot",
+    "description": "Telegram bot to stream video in telegram VC",
+    "repository": "https://github.com/subinps/VCPlayerBot",
+    "stack": "container",
+    "keywords": [
+      "telegram",
+      "bot",
+      "voicechat",
+      "music",
+      "python",
+      "pyrogram",
+      "pytgcalls",
+      "tgcalls",
+      "voip"
+    ],
+    "env": {
+      "API_ID": {
+        "description": "20001238",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "25b1a5ac2cba59def7b098370e27e2c9",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "6916111168:AAHuA7X-ncpPWh8RGSQx6FBvnMPPdY_GiOw",
+        "required": true
+      },
+      "SESSION_STRING": {
+        "description": "AgExMdYAa6LrZKyqTR7a8r_VYZVOqitUCmvR2OUgpo_piEj0IB0nm4rZkJSEpOa8geye8jkwe8dugDDO4pNfdLOlnhVil7GC-GdaNjQx0o2t4SWHgJSZGN8z8xDGRWz7PPXX3B1bKxlJX91CXjPSoPxYoY_Z0oK_XwAoCgri_N6JCCkj5fk8C3NO-gM_NFn6a8v-wqF_DdYmwIbNNRd3bT0rDOgxLQLtaoilCNmlRrZWEN_F8AXd1dGDIqNYFzOs9ThGaDzXzh41hXXxON350k0y2iBYU-GPLsWj-p2gWIyexd52OiqGwkkTg0LGX9JOg8Il77ZqG7wt2K6nfWFS4K8y1Yl5MgAAAAGcO3tAAQ",
+        "required": true
+      },
+      "CHAT": {
+        "description": "-4193012955",
+        "required": true
+      },
+      "LOG_GROUP": {
+        "description": "-4193012955",
+        "required": false
+      },
+      "QUALITY": {
+        "description": "Default quality of your video player, Use one of high, medium or low.",
+        "value": "high",
+        "required": false
+      },
+      "DATABASE_URI": {
+        "description": "mongodb+srv://arthurtymoshenko1:<password>@cluster0.ypylasx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+        "required": false
+      },
+      "ADMINS": {
+        "description": "ID of Users who can use Admin commands(for multiple users seperated by space)",
+        "required": false
+      },
+      "ADMIN_ONLY": {
+        "description": "Change it to True if you want to make /play command available for everyone.",
+        "value": "False",
+        "required": false
+      },
+      "HEROKU_API_KEY": {
+        "description": "HRKU-862c582f-3b91-4c2e-8357-5a8fd3504afa",
+        "required": false
+      },
+      "HEROKU_APP_NAME": {
+        "description": "Admin bot",
+        "required": false
+      },
+      "STARTUP_STREAM": {
+        "description": "YouTube live / Direct link to a video / Telegram link to a YouTube playlist.(Read the README for more info.) ",
+        "value": "https://youtu.be/zcrUCvBD16k",
+        "required": false
+      },
+      "REPLY_MESSAGE": {
+        "description": "A reply message to those who message the USER account in PM. Make it blank if you do not need this feature.",
+        "value": "Hey, Iam a bot to play music, not having time to chat with you.",
+        "required": false
+      }
+    },
+    "formation": {
+      "worker": {
+        "quantity": 1,
+        "size": "free"
+      }
+    }
+  }
